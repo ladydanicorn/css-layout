@@ -1,0 +1,76 @@
+/* Assignment 1, Task 1 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: url(https://cdn.pixabay.com/photo/2015/10/29/14/39/web-1012468_1280.jpg) center/cover no-repeat;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.content-item {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #c213ab;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Task 2 */
+@media (max-width: 600px) {
+    .nav, .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a, .footer div {
+        margin: 5px 0;
+    }
+}
+
+/* Task 3 */
+
+.nav {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-content {
+    justify-content: center;
+    align-items: center;
+}
